@@ -22,6 +22,15 @@
 	padding-top: 120px;
 }
 
+@media (max-width: 800px) {
+	.projects-container {
+		padding-top: 120px;
+	}
+
+
+}
+
+
 @media (max-width: 600px) {
 	.projects-container {
 		padding-top: 90px;

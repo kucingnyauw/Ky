@@ -34,11 +34,11 @@ const Projects = () => {
 
 					<div className="projects-container">
 						<div className="title projects-title">
-						Projects I've crafted to enhance user experiences and create impactful mobile solutions
+							Projects Enhancing User Experiences and Mobile Solutions
 						</div>
 
 						<div className="subtitle projects-subtitle">
-						Over the years, I’ve developed a range of mobile applications and UI/UX designs, and many of these projects are open-source for others to explore. Feel free to review the code, suggest improvements, or share your feedback. I value collaboration and am always open to new ideas and constructive suggestions.
+							Throughout my career, I have developed a variety of mobile applications and UI/UX designs, many of which are open-source. I encourage you to review the code, provide feedback, or suggest improvements. I value collaboration and am always receptive to new ideas and constructive suggestions.
 						</div>
 
 						<div className="projects-list">

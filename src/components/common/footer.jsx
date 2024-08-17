@@ -8,7 +8,12 @@ const Footer = () => {
 			
 			<div className="footer-credits">
 				<div className="footer-credits-text">
-					© 2024 Rifky Firmansyah. All Rights Reserved.
+				  <div className="first">
+				  © 2024 Rifky Firmansyah.
+				  </div>
+				  <div className="second">
+				  All Rights Reserved.
+				  </div>
 				</div>
 			</div>
 		</footer>

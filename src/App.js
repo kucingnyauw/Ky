@@ -16,7 +16,6 @@ import DetailPage from "./pages/detailpage";
 
 function App() {
 	
-
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);

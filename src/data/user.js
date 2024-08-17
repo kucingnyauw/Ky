@@ -7,20 +7,21 @@ const INFO = {
 	},
 
 	socials: {
-		
+
 		github: "https://github.com/Rifkyyyyyyyy/",
 		linkedin: "https://www.linkedin.com/in/rifky-firmansyah-363496317",
 		instagram: "https://www.instagram.com/souji0_/",
 		stackoverflow: "https://stackoverflow.com/users/20464434/zazaza-a",
-		
+
 
 	},
 
 	homepage: {
 		title: "Mobile Developer & UI/UX Designer",
-		description:
-			"I am a mobile app developer specializing in Flutter and a UI/UX designer skilled in Figma. I excel in creating seamless and intuitive user experiences for both web and mobile platforms. My expertise includes building responsive, high-performance applications with a focus on user-centric design and engaging interfaces.\n\n" +
-			"I take pride in translating complex ideas into elegant, functional designs and high-quality code. Committed to adhering to best practices and industry standards, I continuously explore new technologies and techniques to refine my skills and deliver exceptional solutions. Embracing new challenges and seeking growth opportunities drives my passion for innovation in technology."
+
+		"description": "I am a seasoned mobile app developer with a specialization in Flutter, complemented by strong UI/UX design expertise using Figma. My focus is on crafting seamless, intuitive user experiences for both web and mobile platforms. I excel in developing responsive, high-performance applications that prioritize user-centric design and engaging interfaces.\n\nWith a commitment to translating complex concepts into elegant, functional designs and robust code, I uphold best practices and industry standards in every project. My continuous pursuit of new technologies and techniques enables me to refine my skills and deliver exceptional solutions. I am driven by a passion for innovation and thrive on embracing new challenges that foster growth and advancement in the technology landscape."
+
+
 	}
 	,
 
