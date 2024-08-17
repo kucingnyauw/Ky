@@ -70,7 +70,7 @@
 
 @media (max-width: 600px) {
     .project-right {
-        width: 40%; /* Reduced width on mobile */
+        width: 20%; /* Reduced width on mobile */
     }
 
     .project-right h6 {

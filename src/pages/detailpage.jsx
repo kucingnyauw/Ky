@@ -92,6 +92,12 @@ const DetailPage = () => {
 
                     </div>
 
+                    <div className="project-categories">
+                        <p>
+                          Category : {projects.categories}
+                        </p>
+                    </div>
+
 
 
                     <div className="project-description-wrapper">

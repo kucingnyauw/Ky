@@ -25,12 +25,12 @@ const INFO = {
 	}
 	,
 
-	about: {
-		title: "Hello There",
-		description:
-			"I'm Rifky, a passionate mobile developer currently studying at Universitas Pamulang. I’m all about building amazing mobile apps and exploring the latest in tech. I've had the chance to work on several exciting projects, many of which are open-source. Feel free to dive into them and share your thoughts! \n\nI love connecting with others who share an interest in mobile development. Whether you have ideas to discuss, feedback to offer, or just want to chat about the latest trends, I’m all ears. Let’s collaborate and create something awesome together!"
+
+	"about": {
+		"title": "Hello There",
+		"description": "I’m Rifky, a passionate mobile developer currently studying at Universitas Pamulang. At 20 years old, I am committed to crafting innovative and impactful mobile applications while staying at the forefront of technology. My portfolio features a variety of open-source projects, and I invite you to explore them and provide your feedback.\n\nI am also an avid Linux enthusiast, with a particular focus on Arch Linux. My interest in Arch Linux reflects my dedication to mastering system customization and optimization. This passion not only sharpens my technical skills but also enhances my development work by broadening my overall understanding of technology.\n\nIn addition to my professional endeavors, I draw inspiration from listening to music and reading comics. Music provides relaxation and stimulates my creativity, while comics offer an engaging escape and spark my imagination.\n\nI am always eager to connect with like-minded individuals who share a passion for mobile development or Linux. Whether you have ideas to discuss, feedback to offer, or simply wish to chat about the latest trends and technologies, I am all ears. Let’s collaborate and create something extraordinary together!"
 	}
-	,
+
 
 
 
