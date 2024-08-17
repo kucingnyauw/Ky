@@ -66,6 +66,8 @@
     /* Space between link and time */
 }
 
+
+
 @media (max-width: 600px) {
     .project-right {
         width: 40%; /* Reduced width on mobile */
@@ -89,5 +91,9 @@
 
     .logo-stack {
         height: 25px;
+    }
+
+    .deskripsi {
+        padding-top: 0;
     }
 }

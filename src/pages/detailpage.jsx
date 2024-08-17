@@ -95,8 +95,8 @@ const DetailPage = () => {
 
 
                     <div className="project-description-wrapper">
-                        <h4 className='title-head'>Description</h4>
-                        <p className='subtitle'>{projects.subtitle}</p>
+                        <h4 className='title-head '>Description</h4>
+                        <p className='subtitle deskripsi '>{projects.subtitle}</p>
                     </div>
 
                     <div className="project-stack">
