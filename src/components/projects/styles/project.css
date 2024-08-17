@@ -4,7 +4,8 @@
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
-	height: 100%;
+	height: 350px;
+
 }
 
 .project a {
@@ -26,13 +27,7 @@
 	padding: 30px;
 }
 
-.project-logo {
-	width: 30px;
-}
 
-.project-logo img {
-	width: 100%;
-}
 
 .project-title {
 	font-family: var(--secondary-font);
@@ -45,7 +40,15 @@
 
 .project-description {
 	color: var(--secondary-color);
-}
+	overflow: hidden;          /* Menyembunyikan teks yang meluap */
+	text-overflow: ellipsis;   /* Menambahkan elipsis (...) pada teks yang terpotong */
+	display: -webkit-box;      /* Membuat konten menggunakan flexbox dan WebKit untuk pemotongan teks */
+	-webkit-line-clamp: 4;     /* Membatasi jumlah baris menjadi 4 */
+	-webkit-box-orient: vertical; /* Mengatur orientasi kotak untuk vertikal */
+	margin: 0;                 /* Menetapkan margin ke 0 untuk menghindari spasi yang tidak diinginkan */
+	max-width: 100%;           /* Mengatur lebar maksimal ke 100% dari kontainer induk */
+  }
+  
 
 .project-link {
 	display: flex;
@@ -58,15 +61,50 @@
 .project-link-icon {
 	padding-left: 5px;
 	font-size: 13px;
+	
 }
 
 .project-link-text {
-	padding-left: 20px;
+	padding: 10px;
+	margin-top: 10%;
 	font-weight: 700;
+	color: white;
+	background-color: var(--primary-color);
+	border-radius: 4px;
+	
 }
+
+.project-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.project-logos {
+	display: flex;
+	flex-wrap: wrap; /* Mengatur agar logo berpindah ke baris berikutnya jika tidak muat */
+	gap: 15px; /* Menambahkan jarak antara logo */
+  }
+  
+  .project-logo {
+	flex: 1 0 auto; /* Menyusun logo agar fleksibel dan dapat menyusut jika perlu */
+	width: 70px; /* Lebar tetap untuk logo */
+	height: 25px; /* Tinggi tetap untuk logo */
+  }
+  
+  .project-logo img {
+	width: 100%;
+	height: 100%;
+  }
+  
 
 @media (max-width: 600px) {
 	.project {
 		height: 300px;
+	}
+
+	.project-logo {
+		height: 18px;
 	}
 }

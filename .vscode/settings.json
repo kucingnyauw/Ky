@@ -1,0 +1,8 @@
+// "workbench.colorCustomizations" {
+//     "sideBar.background": "#282a36", // Warna latar belakang sidebar (Dracula background)
+//     "sideBar.foreground": "#f8f8f2", // Warna teks di sidebar (Dracula white)
+//     "panel.background": "#282a36", // Warna latar belakang panel (Dracula background)
+//     "panel.border": "#44475a", // Warna border panel (Dracula grey)
+//     "panelTitle.activeBackground": "#44475a", // Warna latar belakang judul panel aktif (Dracula grey)
+//     "panelTitle.activeForeground": "#f8f8f2" // Warna teks judul panel aktif (Dracula white)
+// }

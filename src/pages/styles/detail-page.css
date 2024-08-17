@@ -1,0 +1,93 @@
+@import "../../data/styles.css";
+
+
+/* General Styles */
+.detail-page {
+    background-color: #f5f5f5;
+}
+
+.project-title-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center-aligns items vertically */
+    border-bottom: 1px solid #ddd; /* Optional: Adds a border at the bottom */
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 15%;
+    height: 5%;
+}
+
+.project-right h6 {
+    margin: 1px 0; /* Adjusts spacing between h6 elements */
+    color: #333; /* Sets the text color */
+    font-size: 14px; /* Adjusts the font size */
+}
+
+.posted-by {
+    font-weight: bold; 
+    color: var(--primary-color);
+}
+
+.formatted-datetime {
+    font-style: italic; /* Italicizes the datetime */
+    color: var(--secondary-color);
+}
+
+.project-stack {
+    margin-bottom: 40px;
+}
+
+.project-logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow logos to wrap */
+    gap: 20px;
+    /* Space between logos */
+}
+
+.logo-stack {
+    width: 80px;
+    /* Fixed width */
+    height: 20px;
+}
+
+.project-bottomBar a {
+    width: 100px;
+    color: #007bff;
+    /* Primary color for link */
+    text-decoration: underline;
+    font-size: 1.1em;
+    /* Font size for the link */
+    margin-right: 20px;
+    /* Space between link and time */
+}
+
+@media (max-width: 600px) {
+    .project-right {
+        width: 40%; /* Reduced width on mobile */
+    }
+
+    .project-right h6 {
+        font-size: 12px; /* Reduced font size on mobile */
+    }
+    
+    .posted-by {
+        font-size: 12px; /* Reduced font size on mobile */
+    }
+    
+    .formatted-datetime {
+        font-size: 12px; /* Reduced font size on mobile */
+    }
+
+    .project-logo-wrapper {
+        gap: 10px;
+    }
+
+    .logo-stack {
+        height: 15px;
+    }
+}

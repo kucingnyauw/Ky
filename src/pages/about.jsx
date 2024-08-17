@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
@@ -32,17 +31,16 @@ const About = () => {
 			<div className="page-content">
 				<NavBar active="about" />
 				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
+				
 
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
 									{INFO.about.title}
+									<div className="hand-shake">
+									👋
+									</div>
 								</div>
 
 								<div className="subtitle about-subtitle">
@@ -54,7 +52,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="about.jpg"
+											src="file.png"
 											alt="about"
 											className="about-image"
 										/>

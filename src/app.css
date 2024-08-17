@@ -1,5 +1,6 @@
 @import "/src/data/styles.css";
 
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -65,8 +66,42 @@
 	margin-top: 25px;
 }
 
+.project-author {
+	color: var(--secondary-color);
+	font-size: 16px;
+	/* line-height: 28px; */
+	width: 20%;
+	
+}
+
+.title-secondary {
+	color: var(--primary-color);
+	font-family: var(--secondary-font);
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+}
+
+.title-head {
+	color: var(--primary-color);
+	font-family: var(--secondary-font);
+	font-size: 14px;
+	font-weight: 900;
+	width: 100%;
+}
+
+.title-third {
+	color: var(--primary-color);
+	font-family: var(--secondary-font);
+	font-size: 32px;
+	font-weight: 700;
+	width: 70%;
+}
+
+
 .page-footer {
 	position: block;
+	padding: 5%;
 }
 
 .page-footer::before {
@@ -74,7 +109,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-top: 2px solid var(--tertiary-color);
+	border-top: 1px solid #8080807e;
 }
 
 @media (max-width: 1270px) {
@@ -117,7 +152,15 @@
 		width: 100%;
 	}
 
+	.title-third {
+		width: 60%;
+		font-size: 24px;
+		margin-right: 10px;
+	}
+
 	.subtitle {
 		width: 100%;
 	}
+
+
 }
