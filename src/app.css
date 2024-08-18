@@ -75,11 +75,13 @@
 }
 
 .title-secondary {
-	color: var(--primary-color);
+	color: rgb(0, 0, 0);
+
 	font-family: var(--secondary-font);
-	font-size: 16px;
+	font-size: 21px;
+	
 	font-weight: 700;
-	width: 100%;
+	width: 70%;
 }
 
 .title-head {
@@ -88,6 +90,7 @@
 	font-size: 14px;
 	font-weight: 900;
 	width: 100%;
+	line-height: 10px;
 }
 
 .title-third {
@@ -143,6 +146,11 @@
 		padding: 0 10px;
 	}
 
+	.title-secondary {
+		font-size: 18;
+		width: 100%;
+	}
+
 	.page-content:before,
 	.page-content:after {
 		display: none;
@@ -161,6 +169,18 @@
 	.subtitle {
 		width: 100%;
 	}
+
+
+}
+
+@media (max-width: 600px) {
+  .title-secondary {
+	font-size: 16px;
+	width: 90%;
+	margin-right: 0;
+  }
+
+
 
 
 }

@@ -72,29 +72,40 @@ const DetailPage = () => {
         <div className="detail-page">
             <div className="page-content">
                 <div className="content-wrapper">
-                    
-                <div className='project-title-overview'>
-                        <h4 className='title-third'>Project Overview</h4>
-                        <div className="project-right">
-                       
-                        <h6 className='formatted-datetime'>{projects.formattedDatetime}</h6>
-
-                        </div>
-                    </div>
-
-                    <div className="slider-container">
-                        <MediaSlider items={mediaItems} />
-                    </div>
 
                     <div className="title-secondary">
                         <h1>{projects.title}</h1>
 
 
                     </div>
+                    <div className="project-posted-author">
+                        <img
+                            src="../me.png"
+                            alt="about"
+                            className="project-image"
+                        />
+                        <div className='project-detail-wrapper'>
+                            <h6 className='author-name'>{projects.author}</h6>
+                            <h6 className='publication-info'>
+                                Published in Personal Web
+                                <span className="divider"></span>
+                                {projects.formattedDatetime}
+                            </h6>
+                        </div>
+                    </div>
+
+
+                    <div className="slider-container">
+                        <MediaSlider items={mediaItems} />
+                    </div>
+
 
                     <div className="project-categories">
-                        <p>
-                          Category : {projects.categories}
+                        <h5 className='title-head'>
+                        Category
+                        </h5>
+                        <p className='subtitle deskripsi'>
+                           {projects.categories}
                         </p>
                     </div>
 

@@ -4,31 +4,94 @@
 /* General Styles */
 .detail-page {
     background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .project-title-overview {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center-aligns items vertically */
-    border-bottom: 1px solid #ddd; /* Optional: Adds a border at the bottom */
+    
+   
 }
 
-.project-right {
+.project-description-wrapper {
+   
+    padding-bottom: 10px;
+}
+
+.project-posted-author {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   
+    margin-bottom: 16px;
+
+}
+
+
+.divider {
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #777;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.project-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.project-detail-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 15%;
-    height: 5%;
+    justify-content: center;
 }
+
+.author-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.publication-info {
+    font-size: 14px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.project-categories{
+    padding-bottom: 10px;
+    
+}
+
+
+
+.project-image {
+    width: 50px;
+    height: 50px;
+}
+
+
 
 .project-right h6 {
     margin: 1px 0; /* Adjusts spacing between h6 elements */
     color: #333; /* Sets the text color */
     font-size: 14px; /* Adjusts the font size */
+    font-family: var(--primary-font);
 }
 
 .posted-by {
     font-weight: bold; 
+    font-family: var(--primary-font);
     color: var(--primary-color);
 }
 
@@ -44,15 +107,16 @@
 .project-logo-wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
     /* Allow logos to wrap */
-    gap: 20px;
+    gap: 30px;
     /* Space between logos */
 }
 
 .logo-stack {
-    width: 80px;
+    width: 100px;
     /* Fixed width */
-    height: 20px;
+    height: 22px;
 }
 
 .project-bottomBar a {
@@ -90,10 +154,14 @@
     }
 
     .logo-stack {
-        height: 25px;
+        height: 22px;
+        width: 80px;
     }
 
     .deskripsi {
         padding-top: 0;
+    }
+    .project-posted-author {
+        padding-bottom: 10px;
     }
 }
