@@ -1,14 +1,12 @@
 @import "../../data/styles.css";
 
-.homepage-logo-container {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-top: 160px;
-}
 
 .homepage-container {
 	padding-top: 135px;
+	display: flex;
+	height: 100%;
+	margin: 0;
+	flex-direction: column;
 }
 
 .homepage-first-area {
