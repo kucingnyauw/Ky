@@ -36,6 +36,14 @@
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
+	
+	overflow: hidden;          /* Menyembunyikan teks yang meluap */
+	text-overflow: ellipsis;   /* Menambahkan elipsis (...) pada teks yang terpotong */
+	display: -webkit-box;    
+	-webkit-line-clamp: 1;     /* Membatasi jumlah baris menjadi 4 */
+	-webkit-box-orient: vertical; /* Mengatur orientasi kotak untuk vertikal */
+              /* Menetapkan margin ke 0 untuk menghindari spasi yang tidak diinginkan */
+	max-width: 100%;    
 }
 
 .project-description {

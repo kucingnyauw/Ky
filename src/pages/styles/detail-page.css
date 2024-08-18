@@ -45,7 +45,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 20px;
     object-fit: cover;
 }
 
@@ -53,47 +53,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
 }
 
 .author-name {
     font-size: 16px;
-    font-weight: bold;
+    font-family: var(--primary-font);
+    font-weight :900;
     margin: 0;
-    color: #333;
+    color: var(--primary-color)
 }
 
 .publication-info {
     font-size: 14px;
-    color: #777;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
     margin-top: 4px;
 }
 
 .project-categories{
-    padding-bottom: 10px;
+    padding-bottom: 2px;
+    
+}
+
+.publication-bold {
+    color: var(--primary-color);
     
 }
 
 
 
-.project-image {
-    width: 50px;
-    height: 50px;
-}
 
 
-
-.project-right h6 {
-    margin: 1px 0; /* Adjusts spacing between h6 elements */
-    color: #333; /* Sets the text color */
-    font-size: 14px; /* Adjusts the font size */
-    font-family: var(--primary-font);
-}
-
-.posted-by {
-    font-weight: bold; 
-    font-family: var(--primary-font);
-    color: var(--primary-color);
-}
 
 .formatted-datetime {
     font-style: italic; /* Italicizes the datetime */
@@ -114,9 +105,8 @@
 }
 
 .logo-stack {
-    width: 100px;
-    /* Fixed width */
-    height: 22px;
+    width: 80px; 
+	height: 25px;
 }
 
 .project-bottomBar a {
@@ -128,6 +118,10 @@
     /* Font size for the link */
     margin-right: 20px;
     /* Space between link and time */
+}
+
+.deskripsi {
+    width: 100%;
 }
 
 

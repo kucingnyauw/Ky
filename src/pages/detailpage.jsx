@@ -87,7 +87,7 @@ const DetailPage = () => {
                         <div className='project-detail-wrapper'>
                             <h6 className='author-name'>{projects.author}</h6>
                             <h6 className='publication-info'>
-                                Published in Personal Web
+                                Published in <span className='publication-bold'>Personal Web</span>
                                 <span className="divider"></span>
                                 {projects.formattedDatetime}
                             </h6>
