@@ -20,7 +20,7 @@
 	width: 380px;
 	height: 70px;
 	background: #fff;
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 	border-radius: 16px;
 }
 
@@ -55,6 +55,12 @@
 /* Specific style for "Home" item to align it to the right */
 .nav-home {
 	margin-left: auto;
+}
+
+@media (max-width: 800px) {
+	.nav-list {
+		padding: 2.4vh;
+	}
 }
 
 @media (max-width: 600px) {

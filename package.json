@@ -4,7 +4,6 @@
 	"author": {
 		"name": "Rifky Firmansyah",
 		"email": "rfky.frmansyah@gmail.com"
-	
 	},
 	"private": true,
 	"dependencies": {
@@ -23,6 +22,7 @@
 		"react-helmet": "^6.1.0",
 		"react-router-dom": "^6.11.1",
 		"react-scripts": "5.0.1",
+		"react-share": "^5.1.0",
 		"react-slick": "^0.30.2",
 		"slick-carousel": "^1.8.1",
 		"styled-components": "^5.3.10",

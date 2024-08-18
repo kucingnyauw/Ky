@@ -6,12 +6,32 @@ import './styles/detail-page.css';
 import TypingIndicator from '../components/loading/loading';
 
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShare, faX, } from '@fortawesome/free-solid-svg-icons';
+import { faSquareShareNodes } from '@fortawesome/free-solid-svg-icons/faSquareShareNodes';
+
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+    TelegramShareButton,
+    EmailShareButton,
+    FacebookIcon,
+    TwitterIcon,
+    WhatsappIcon,
+    TelegramIcon,
+    EmailIcon
+} from 'react-share';
+
+
+
 
 const DetailPage = () => {
     const [projects, setProjects] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    // const location = useLocation();
+    const [isOpen, setIsOpen] = useState(false);
+    const currentUrl = window.location.href;
     const { instanceId } = useParams();
 
 
@@ -68,44 +88,106 @@ const DetailPage = () => {
         ...(projects.videoUrl ? [{ imageUrl: null, videoUrl: projects.videoUrl }] : [])
     ];
 
+
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(currentUrl);
+    };
+
     return (
         <div className="detail-page">
             <div className="page-content">
+
                 <div className="content-wrapper">
-
-                    <div className="title-secondary">
-                        <h1>{projects.title}</h1>
-
-
-                    </div>
-                    <div className="project-posted-author">
-                        <img
-                            src="../me.png"
-                            alt="about"
-                            className="project-image"
-                        />
-                        <div className='project-detail-wrapper'>
-                            <h6 className='author-name'>{projects.author}</h6>
-                            <h6 className='publication-info'>
-                                Published in <span className='publication-bold'>Personal Web</span>
-                                <span className="divider"></span>
-                                {projects.formattedDatetime}
-                            </h6>
+                    {isOpen && (
+                        <div className="popup">
+                            <div className={`share-modal ${isOpen ? 'share-modal-open' : ''}`}>
+                                <header className='share-modal-header'>
+                                    <h1 className='share-modal-title'>Share Content</h1>
+                                    <button className='share-modal-close' onClick={() => setIsOpen(false)}>
+                                       X
+                                    </button>
+                                </header>
+                                <div className='share-modal-content'>
+                                    <p className='share-modal-text'>Share this link via</p>
+                                    <ul className='share-modal-icons'>
+                                        <li className='share-icon'>
+                                            <FacebookShareButton url={currentUrl} >
+                                                <FacebookIcon size={32} round   className='icon-share'  />
+                                            </FacebookShareButton>
+                                        </li>
+                                        <li className='share-icon'>
+                                            <TwitterShareButton url={currentUrl}>
+                                                <TwitterIcon size={32} round  className='icon-share'  />
+                                            </TwitterShareButton>
+                                        </li>
+                                        <li className='share-icon'>
+                                            <WhatsappShareButton url={currentUrl}>
+                                                <WhatsappIcon size={32} round  className='icon-share' />
+                                            </WhatsappShareButton>
+                                        </li>
+                                        <li className='share-icon'>
+                                            <TelegramShareButton url={currentUrl}>
+                                                <TelegramIcon size={32} round  className='icon-share' />
+                                            </TelegramShareButton>
+                                        </li>
+                                        <li className='share-icon'>
+                                            <EmailShareButton url={currentUrl}>
+                                                <EmailIcon size={32} round className='icon-share' />
+                                            </EmailShareButton>
+                                        </li>
+                                    </ul>
+                                    <p className='share-modal-text'>Or copy link</p>
+                                    <div className='share-modal-copy-field'>
+                                      
+                                        <input type='text' className='share-modal-url-input' readOnly value={currentUrl} />
+                                        <button className='share-modal-copy-button' onClick={handleCopy}>Copy</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                    )}
+
+
+                   
+                    <div className="project-posted-author">
+                        <div className='project-posted-wrapper'>
+                            <img
+                                src="../me.png"
+                                alt="about"
+                                className="project-image"
+                            />
+                            <div className='project-detail-wrapper'>
+                                <h6 className='author-name'>{projects.author}</h6>
+                                <h6 className='publication-info'>
+                                    Published in <span className='publication-bold'>Personal Web</span>
+                                    <span className="divider"></span>
+                                    {projects.formattedDatetime}
+                                </h6>
+                            </div>
+                        </div>
+
+                        <FontAwesomeIcon className='share' onClick={() => setIsOpen(!isOpen)} icon={faShare}></FontAwesomeIcon>
+
                     </div>
 
 
                     <div className="slider-container">
                         <MediaSlider items={mediaItems} />
                     </div>
+                    <div className="title-secondary">
+                        <h1>{projects.title}</h1>
 
+
+                    </div>
 
                     <div className="project-categories">
                         <h5 className='title-head'>
-                        Category
+                            Tags
                         </h5>
                         <p className='subtitle deskripsi'>
-                           {projects.categories}
+                            {projects.categories}
                         </p>
                     </div>
 

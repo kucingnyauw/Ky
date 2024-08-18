@@ -87,7 +87,7 @@
 .title-head {
 	color: var(--primary-color);
 	font-family: var(--secondary-font);
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 900;
 	width: 100%;
 	line-height: 10px;
@@ -177,7 +177,7 @@
 @media (max-width: 600px) {
   .title-secondary {
 	font-size: 16px;
-	width: 90%;
+	width: 100%;
 	margin-right: 0;
   }
 
