@@ -2,12 +2,12 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-/* Styles for MediaSlider */
 .slider-container {
-    width: 100%; /* Full width of the viewport */
+    width: 100%;
     position: relative;
-    overflow: hidden; /* Prevents overflow issues */
+    overflow: hidden;
     margin-top: 20px;
+  
 }
 
 .slider-item {
@@ -15,26 +15,26 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    width: 100%; /* Ensure slider items take full width */
-    
-    outline: none; /* Remove focus outline */
-    
+    width: 100%;
+    height: 700px; /* Anda bisa sesuaikan tinggi sesuai kebutuhan */
+    outline: none;
 }
 
 .slider-media {
-    width: 100%; /* Full width of the slider item */
-    height: 100%; /* Full height of the slider item */
-    overflow: hidden; /* Ensure content does not overflow */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     z-index: 1;
    
 }
 
 .slider-media img,
 .slider-media video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures content covers the area without distortion */
-   
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Sesuaikan ukuran gambar dengan proporsi aslinya */
+    image-rendering: auto; /* Mencegah gambar buram */
+    backface-visibility: hidden; /* Mencegah rendering yang buruk */
 }
 
 .slick-dots {
@@ -42,29 +42,29 @@
 }
 
 .slick-dot {
-    background: #333; /* Darker color for dots */
+    background: #333;
     border-radius: 50%;
     width: 20px;
     height: 20px;
 }
 
 .slick-dots li.slick-active .slick-dot {
-    background: #007bff; /* Color for active dot */
+    background: #007bff;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .slider-item {
-        height: 600px; /* Adjust height for smaller screens */
+        height: 600px; /* Sesuaikan tinggi sesuai kebutuhan */
     }
 
     .slick-dot {
-        width: 12px; /* Smaller dots for mobile */
+        width: 12px;
         height: 12px;
     }
 
     .slick-dots {
-        bottom: 10px; /* Adjust position of dots */
+        bottom: 10px;
     }
 
     .slider-container {
@@ -74,21 +74,21 @@
 
 @media (max-width: 480px) {
     .slider-item {
-        height: 400px; /* Further adjust height for very small screens */
+        height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
     }
 
     .slick-dot {
-        width: 8px; /* Even smaller dots for very small screens */
+        width: 8px;
         height: 8px;
     }
 
     .slick-dots {
-        bottom: 5px; /* Further adjust position of dots */
+        bottom: 5px;
     }
 
     .slider-media img,
     .slider-media video {
-        object-fit: fill;
+        object-fit: contain; /* Tetap menggunakan contain untuk menjaga proporsi */
     }
 
     .slider-container {

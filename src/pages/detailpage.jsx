@@ -105,7 +105,7 @@ const DetailPage = () => {
                                 <header className='share-modal-header'>
                                     <h1 className='share-modal-title'>Share Content</h1>
                                     <button className='share-modal-close' onClick={() => setIsOpen(false)}>
-                                       X
+                                        <FontAwesomeIcon icon={faX} />
                                     </button>
                                 </header>
                                 <div className='share-modal-content'>
@@ -113,22 +113,22 @@ const DetailPage = () => {
                                     <ul className='share-modal-icons'>
                                         <li className='share-icon'>
                                             <FacebookShareButton url={currentUrl} >
-                                                <FacebookIcon size={32} round   className='icon-share'  />
+                                                <FacebookIcon size={32} round className='icon-share' />
                                             </FacebookShareButton>
                                         </li>
                                         <li className='share-icon'>
                                             <TwitterShareButton url={currentUrl}>
-                                                <TwitterIcon size={32} round  className='icon-share'  />
+                                                <TwitterIcon size={32} round className='icon-share' />
                                             </TwitterShareButton>
                                         </li>
                                         <li className='share-icon'>
                                             <WhatsappShareButton url={currentUrl}>
-                                                <WhatsappIcon size={32} round  className='icon-share' />
+                                                <WhatsappIcon size={32} round className='icon-share' />
                                             </WhatsappShareButton>
                                         </li>
                                         <li className='share-icon'>
                                             <TelegramShareButton url={currentUrl}>
-                                                <TelegramIcon size={32} round  className='icon-share' />
+                                                <TelegramIcon size={32} round className='icon-share' />
                                             </TelegramShareButton>
                                         </li>
                                         <li className='share-icon'>
@@ -139,7 +139,7 @@ const DetailPage = () => {
                                     </ul>
                                     <p className='share-modal-text'>Or copy link</p>
                                     <div className='share-modal-copy-field'>
-                                      
+
                                         <input type='text' className='share-modal-url-input' readOnly value={currentUrl} />
                                         <button className='share-modal-copy-button' onClick={handleCopy}>Copy</button>
                                     </div>
@@ -149,38 +149,45 @@ const DetailPage = () => {
 
                     )}
 
-
-                   
-                    <div className="project-posted-author">
-                        <div className='project-posted-wrapper'>
-                            <img
-                                src="../me.png"
-                                alt="about"
-                                className="project-image"
-                            />
-                            <div className='project-detail-wrapper'>
-                                <h6 className='author-name'>{projects.author}</h6>
-                                <h6 className='publication-info'>
-                                    Published in <span className='publication-bold'>Personal Web</span>
-                                    <span className="divider"></span>
-                                    {projects.formattedDatetime}
-                                </h6>
-                            </div>
-                        </div>
-
-                        <FontAwesomeIcon className='share' onClick={() => setIsOpen(!isOpen)} icon={faShare}></FontAwesomeIcon>
-
-                    </div>
-
-
-                    <div className="slider-container">
-                        <MediaSlider items={mediaItems} />
-                    </div>
                     <div className="title-secondary">
                         <h1>{projects.title}</h1>
 
 
                     </div>
+
+
+
+                    <div className="project-posted-author">
+                        <div className="project-posted-wrapper">
+                            <img
+                                src="../me.png"
+                                alt="about"
+                                className="project-image"
+                            />
+                            <div className="project-detail">
+                                <div className="project-detail-wrapper">
+                                    <h6 className="author-name">{projects.author}</h6>
+                                    <span className='publication-light'>Published in <span className='publication-bold'>Personal Web</span><span className='divider'></span><span className='formatted-datetime'>{projects.formattedDatetime}</span></span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="share" onClick={() => setIsOpen(!isOpen)}>
+                            <FontAwesomeIcon icon={faShare} className='share-icon-s'></FontAwesomeIcon>
+                            <h6>Share</h6>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div className="slider-container">
+                        <MediaSlider items={mediaItems} />
+                    </div>
+
 
                     <div className="project-categories">
                         <h5 className='title-head'>

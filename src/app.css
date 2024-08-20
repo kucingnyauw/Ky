@@ -75,13 +75,15 @@
 }
 
 .title-secondary {
-	color: rgb(0, 0, 0);
+	color: var(--primary-color);
 
 	font-family: var(--secondary-font);
 	font-size: 21px;
 	
 	font-weight: 700;
-	width: 70%;
+	width: 100%;
+	border-bottom: 1px  solid #ddd;
+	
 }
 
 .title-head {
@@ -90,7 +92,7 @@
 	font-size: 16px;
 	font-weight: 900;
 	width: 100%;
-	line-height: 10px;
+	line-height: 0px;
 }
 
 .title-third {
