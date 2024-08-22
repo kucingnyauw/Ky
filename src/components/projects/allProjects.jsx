@@ -68,24 +68,24 @@ const AllProjects = () => {
   if (error) {
     return (
       <div className="all-projects-container">
-      {
-        Array(2).fill(null).map((_, index) => (
-          <div className="all-projects-project" key={index}><ProjectSkeleton key={index} /></div>
-        ))
-      }
-    </div>
+        {
+          Array(2).fill(null).map((_, index) => (
+            <div className="all-projects-project" key={index}><ProjectSkeleton key={index} /></div>
+          ))
+        }
+      </div>
     )
   }
 
   return (
     <div className="all-projects-container">
       {projects.length === 0 ? (
-        <div>No projects found.</div>
+        <div className="all-projects-project" ><ProjectSkeleton /></div>
       ) : (
         projects.map((project, index) => (
           <div className="all-projects-project" key={index}>
             <Project
-              logo={project.iconUrls}
+
               title={project.title}
               description={project.subtitle}
               instanceId={project.instanceId}

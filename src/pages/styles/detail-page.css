@@ -208,6 +208,7 @@
   font-size: 16px;
   font-weight: 900;
   margin: 0;
+  line-height: 2;
   color: black;
 }
 
@@ -324,7 +325,7 @@
   }
 
   .posted-by {
-    font-size: 12px;
+    font-size: 1px;
     /* Reduced font size on mobile */
   }
 
@@ -360,9 +361,9 @@
     font-size: 12px;
   }
 
-  .author-name {
-
-    line-height: 1;
+  .project-image {
+    width: 55px;
+    height: 55px;
   }
 
   .publication-info {
@@ -371,5 +372,9 @@
   }
   .project-posted-wrapper {
     width: 70%;
+  }
+
+  .author-name {
+    font-size: 14px;
   }
 }
