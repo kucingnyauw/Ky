@@ -367,7 +367,7 @@
   }
 
   .publication-info {
-    line-height: 1;
+    line-height: 2;
 
   }
   .project-posted-wrapper {
@@ -376,5 +376,14 @@
 
   .author-name {
     font-size: 14px;
+  }
+
+
+	.share-text {
+		display: none;
+	}
+
+  .share {
+    border: none;
   }
 }

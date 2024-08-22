@@ -176,7 +176,7 @@ const DetailPage = () => {
 
                         <div className="share" onClick={() => setIsOpen(!isOpen)}>
                             <FontAwesomeIcon icon={faShare} className='share-icon-s'></FontAwesomeIcon>
-                            <h6>Share</h6>
+                            <h6 className='share-text'>Share</h6>
                         </div>
                     </div>
 
